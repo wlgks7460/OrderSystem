@@ -40,7 +40,7 @@ public class MemberController {
         model.addAttribute("members", memberService.members());
         return memberService.members();
     }
-
+// 주문 상세
     @GetMapping("/member/{id}/orders")
     @ResponseBody
     public List<OrderingListReqDto> memberOrders(@PathVariable Long id, Model model){
